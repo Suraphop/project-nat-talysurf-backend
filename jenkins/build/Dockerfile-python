@@ -7,7 +7,7 @@ RUN apt-get update
 RUN pip3 install -r requirements.txt
 
 # set timezone to Asia/Bangkok
-echo "Asia/Bangkok" > /etc/timzone
+# echo "Asia/Bangkok" > /etc/timzone
 # set localtime to Asia/Bangkok
 rm -rf /etc/localtime
 ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/localtime
